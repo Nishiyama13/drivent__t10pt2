@@ -1,8 +1,8 @@
 import { NextFunction, Response } from "express";
 import httpStatus from "http-status";
 import { AuthenticatedRequest } from "@/middlewares";
-import ticketService from "../services/tickets-service";
-import { TicketInput } from "../protocols";
+import ticketService from "@/services/tickets-service";
+import { TicketInput } from "@/protocols";
 
 
 export async function getAllTicketsTypes(req: AuthenticatedRequest, res: Response, next: NextFunction ): Promise<Response> {
